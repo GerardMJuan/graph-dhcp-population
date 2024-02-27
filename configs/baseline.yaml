@@ -1,0 +1,34 @@
+data_path: /home/gmarti/DATA/DHCP_FETAL/dhcp_quantitative_values.csv
+gpus: 1
+log_every_n_steps: 1
+max_epochs: 300
+progress_bar_refresh_rate: 1
+check_val_every_n_epoch: 1
+enable_progress_bar: 1
+
+conv_layers: 
+  - [68, 512]
+dgm_layers: 
+  - [35, 35]
+  - []
+fc_layers: 
+  - 512
+  - 128
+  - 1
+pre_fc: null
+
+gfun: gcn
+ffun: phenotypes
+k: 6
+pooling: add
+distance: euclidean
+
+dropout: 0
+lr: 0.004
+test_eval: 10
+
+num_classes: 1
+task: regression
+
+graph_loss_mae: 6
+edges: phenotypes
