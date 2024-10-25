@@ -1,5 +1,5 @@
 # graph-dhcp-population
-Testing various graph learning algorithms for dHCP
+Collection of scripts for testing various population graph learning algorithms for fetal MRI derived data.
 
 ## Scripts
 
@@ -9,20 +9,17 @@ Main script for training and evaluating a 3D Vision Transformer Autoencoder on f
 ### adaptative_graph_learning.py
 Main script for testing the adaptive graph learning algorithm on the dHCP dataset.
 
-### combat_harmonization.R
-R script for applying ComBat harmonization to merge and normalize data from dHCP and MULTIFACT datasets.
-
-### data_analysis_samescript.ipynb
-Jupyter notebook for general data analysis, including merging dHCP and MULTIFACT data, applying QC, and visualizing key variables.
-
 ### data_preparation.py
 Script for preparing data for the graph learning model, combining data from dHCP and MULTIFACT datasets.
 
 ### VitAE_analysis.py
 Script for analyzing a specific ViT Autoencoder model, including attention maps and latent space representation.
 
-### vit_graph.py
-Script combining the Vision Transformer model with the graph model for fetal brain analysis.
+### MKL.ipynb
+Jupyter notebook for testing the unsupervised MKL algorithm on the dHCP dataset.
+
+### MKL_experiment.py
+Script for testing the unsupervised MKL algorithm on the dHCP dataset and doing hyperparameter search.
 
 ## Local Scripts
 
