@@ -161,6 +161,9 @@ cython_debug/
 
 # Folders with data and logs
 logs/
+logs_hpc/
 wandb/
 data/
 lightning_logs/
+graph_learning/
+results/
