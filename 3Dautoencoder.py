@@ -26,7 +26,7 @@ from monai.transforms import (
 )
 from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.loggers import WandbLogger
-from graph_learning.vit_vae import ViTAutoEncModule
+from graph_adapt_learning.vit_vae import ViTAutoEncModule
 import pytorch_lightning as pl
 import nibabel as nib
 import numpy as np

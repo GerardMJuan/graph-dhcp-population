@@ -167,3 +167,4 @@ data/
 lightning_logs/
 graph_learning/
 results/
+graph_adapt_learning/

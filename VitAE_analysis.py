@@ -9,7 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import wandb
 from monai.data import DataLoader, Dataset
-from graph_learning.vit_vae import ViTAutoEncModule
+from graph_adapt_learning.vit_vae import ViTAutoEncModule
 import yaml
 import argparse
 from utils.data import load_bids_dataset, prepare_dataloader

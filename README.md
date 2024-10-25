@@ -32,7 +32,7 @@ Script that applies the mask to the input image using SVRTK and saves it to the 
 ## Configurations
 ## Graph Learning
 
-The `graph_learning/` directory referos to the implementation of the Pytorch Lightning implementation for the paper 
+The `graph_adapt_learning/` directory referos to the implementation of the Pytorch Lightning implementation for the paper 
 [Multimodal brain age estimation using interpretable adaptive population-graph learning](https://arxiv.org/abs/2307.04639)
 (MICCAI 2023) by Kyriaki-Margarita Bintsi, Vasileios Baltatzis, Rolandos Alexandros Potamias, Alexander Hammers, and Daniel Rueckert. The code can be found in the [adaptive-graph-learning](https://github.com/bintsi/adaptive-graph-learning) repository.
 

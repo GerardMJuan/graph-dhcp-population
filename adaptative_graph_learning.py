@@ -17,8 +17,8 @@ from torch.utils.data import DataLoader
 from torch_geometric.loader import DataLoader
 from argparse import Namespace
 from utils.data import preprocess_data
-from graph_learning.graph_construction import PopulationGraphUKBB, UKBBageDataset
-from graph_learning.model import GraphLearningModel
+from graph_adapt_learning.graph_construction import PopulationGraphUKBB, UKBBageDataset
+from graph_adapt_learning.model import GraphLearningModel
 from utils.plot import plot_graph
 
 os.environ["WANDB_SILENT"]="true"
