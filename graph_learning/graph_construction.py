@@ -121,10 +121,10 @@ class PopulationGraphUKBB:
 
         """
         if self.task == 'regression':
-            labels = data_df['gestational_weeks'].values   
+            labels = data_df['gestational_weeks'].values
             labels = torch.from_numpy(labels).float()
         elif self.task == 'classification':
-            labels = data_df['gestational_weeks'].values 
+            labels = data_df['gestational_weeks'].values
             print(np.unique(labels, return_counts=True))
             labels = torch.from_numpy(labels)
         else:

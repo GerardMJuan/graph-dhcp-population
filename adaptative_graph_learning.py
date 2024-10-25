@@ -54,8 +54,8 @@ def main(config):
     print(f"Test size: {test_data.shape[0]}")
 
     # Define the parameters of the model
-    config.phenotype_columns = train_data.columns[1:]
-    config.node_columns = train_data.columns[2:]  # same but without sex
+    # config.phenotype_columns = train_data.columns[1:]
+    # config.node_columns = train_data.columns[2:]  # same but without sex
 
     print(f"Phenotype columns: {config.phenotype_columns}")
     print(f"Node columns: {config.node_columns}")
@@ -239,7 +239,7 @@ if __name__ == "__main__":
 
     # argparse the configuration file
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config", type=str, default="configs/baseline.yaml")
+    parser.add_argument("--config", type=str, default="configs/baseline_hyper.yaml")
     args = parser.parse_args()
 
     config_file = args.config
@@ -254,5 +254,5 @@ if __name__ == "__main__":
 
     if type(config) is not Namespace:
         config = Namespace(**config)
-
+    
     main(config)

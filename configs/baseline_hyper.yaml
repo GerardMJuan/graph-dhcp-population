@@ -1,0 +1,136 @@
+data_path: data/dhcp_quantitative_values_summed.csv
+gpus: 1
+log_every_n_steps: 1
+max_epochs: 300
+progress_bar_refresh_rate: 1
+check_val_every_n_epoch: 1
+enable_progress_bar: 1
+
+conv_layers: 
+  - [68, 512]
+dgm_layers: 
+  - [35, 35]
+  - []
+fc_layers: 
+  - 512
+  - 128
+  - 1
+pre_fc: null
+
+gfun: gcn
+ffun: phenotypes
+k: 10
+pooling: add
+distance: euclidean
+
+dropout: 0
+lr: 0.004
+test_eval: 10
+
+num_classes: 1
+task: regression
+
+graph_loss_mae: 6
+edges: phenotypes
+phenotype_columns:
+  - WM
+  - Deep GM
+  - Cortical GM
+  - CSF
+  - total_volume
+node_columns:
+  - Hippocampus left
+  - Hippocampus right
+  - Amygdala left
+  - Amygdala right
+  - Anterior temporal lobe, medial part left GM
+  - Anterior temporal lobe, medial part right GM
+  - Anterior temporal lobe, lateral part left GM
+  - Anterior temporal lobe, lateral part right GM
+  - Gyri parahippocampalis et ambiens anterior part left GM
+  - Gyri parahippocampalis et ambiens anterior part right GM
+  - Superior temporal gyrus, middle part left GM
+  - Superior temporal gyrus, middle part right GM
+  - Medial and inferior temporal gyri anterior part left GM
+  - Medial and inferior temporal gyri anterior part right GM
+  - Lateral occipitotemporal gyrus, gyrus fusiformis anterior part left GM
+  - Lateral occipitotemporal gyrus, gyrus fusiformis anterior part right GM
+  - Cerebellum left
+  - Cerebellum right
+  - Brainstem, spans the midline
+  - Insula right GM
+  - Insula left GM
+  - Occipital lobe right GM
+  - Occipital lobe left GM
+  - Gyri parahippocampalis et ambiens posterior part right GM
+  - Gyri parahippocampalis et ambiens posterior part left GM
+  - Lateral occipitotemporal gyrus, gyrus fusiformis posterior part right GM
+  - Lateral occipitotemporal gyrus, gyrus fusiformis posterior part left GM
+  - Medial and inferior temporal gyri posterior part right GM
+  - Medial and inferior temporal gyri posterior part left GM
+  - Superior temporal gyrus, posterior part right GM
+  - Superior temporal gyrus, posterior part left GM
+  - Cingulate gyrus, anterior part right GM
+  - Cingulate gyrus, anterior part left GM
+  - Cingulate gyrus, posterior part right GM
+  - Cingulate gyrus, posterior part left GM
+  - Frontal lobe right GM
+  - Frontal lobe left GM
+  - Parietal lobe right GM
+  - Parietal lobe left GM
+  - Caudate nucleus right
+  - Caudate nucleus left
+  - Thalamus right, high intensity part in T2
+  - Thalamus left, high intensity part in T2
+  - Subthalamic nucleus right
+  - Subthalamic nucleus left 
+  - Lentiform Nucleus right
+  - Lentiform Nucleus left
+  - Corpus Callosum
+  - Lateral Ventricle left
+  - Lateral Ventricle right
+  - Anterior temporal lobe, medial part left WM
+  - Anterior temporal lobe, medial part right WM
+  - Anterior temporal lobe, lateral part left WM
+  - Anterior temporal lobe, lateral part right WM
+  - Gyri parahippocampalis et ambiens anterior part left WM
+  - Gyri parahippocampalis et ambiens anterior part right WM
+  - Superior temporal gyrus, middle part left WM
+  - Superior temporal gyrus, middle part right WM
+  - Medial and inferior temporal gyri anterior part left WM
+  - Medial and inferior temporal gyri anterior part right WM
+  - Lateral occipitotemporal gyrus, gyrus fusiformis anterior part left WM
+  - Lateral occipitotemporal gyrus, gyrus fusiformis anterior part right WM
+  - Insula right WM
+  - Insula left WM
+  - Occipital lobe right WM
+  - Occipital lobe left WM
+  - Gyri parahippocampalis et ambiens posterior part right WM
+  - Gyri parahippocampalis et ambiens posterior part left WM
+  - Lateral occipitotemporal gyrus, gyrus fusiformis posterior part right WM
+  - Lateral occipitotemporal gyrus, gyrus fusiformis posterior part left WM
+  - Medial and inferior temporal gyri posterior part right WM
+  - Medial and inferior temporal gyri posterior part left WM
+  - Superior temporal gyrus, posterior part right WM
+  - Superior temporal gyrus, posterior part left WM
+  - Cingulate gyrus, anterior part right WM
+  - Cingulate gyrus, anterior part left WM
+  - Cingulate gyrus, posterior part right WM
+  - Cingulate gyrus, posterior part left WM
+  - Frontal lobe right WM
+  - Frontal lobe left WM
+  - Parietal lobe right WM
+  - Parietal lobe left WM
+  - CSF
+  - Extra-cranial background
+  - Intra-cranial background
+  - Thalamus right, low intensity part in T2
+  - Thalamus left, low intensity part in T2
+  - Third Ventricle
+  - Fourth Ventricle
+  - Cerebellar Vermis
+  - Cavum
+  - mean_curv
+  - mean_sulc
+  - mean_thickness
+
